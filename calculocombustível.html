@@ -1,0 +1,30 @@
+<script>
+   do{
+   var tipo = prompt('digitte o tipo do combustível')
+
+    var litros = parseFloat(prompt('digite quantos litros deseja abastecer'))
+
+    let gasolina = litros*6.94
+
+    let diesel = litros*5.68
+
+    let alcool = litros*5.39
+
+    if(tipo == 'g'){
+        alert('Preço: '+ gasolina)
+    }
+    else if (tipo=='d'){
+        alert('Preço: ' + diesel)
+    }
+    else if (tipo=='a'){
+        alert('Preço: ' + alcool)
+    }
+    else{
+        alert('Código inválido')
+    }
+    var continuar = prompt('deseje continuar? SIM ou NÃO?').toUpperCase()
+}while(continuar== 'SIM')
+if (continuar !== 'SIM'){
+    alert('Obrigado!')
+}
+</script>
